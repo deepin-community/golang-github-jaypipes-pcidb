@@ -1,5 +1,32 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-jaypipes-pcidb (1.0.1-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream release
+  * d/control:
+    - Update Standards-Version to 4.7.0 (no changes needed)
+    - Update my email address
+  * Update years in d/control
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Mathias Gibbens <gibmat@debian.org>  Tue, 04 Jun 2024 23:08:52 +0000
+
+golang-github-jaypipes-pcidb (1.0.0-1) unstable; urgency=medium
+
+  [ Aloïs Micard ]
+  * update debian/gitlab-ci.yml (using pkg-go-tools/ci-config)
+
+  [ Mathias Gibbens ]
+  * New upstream release
+  * Update years in d/copyright
+
+ -- Mathias Gibbens <mathias@calenhad.com>  Fri, 29 Apr 2022 00:32:36 +0000
+
+golang-github-jaypipes-pcidb (0.6.0-2) unstable; urgency=medium
+
+  * Source only upload for testing migration
+
+ -- Mathias Gibbens <mathias@calenhad.com>  Fri, 29 Apr 2022 00:31:14 +0000
+
+golang-github-jaypipes-pcidb (0.6.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #998150)
+
+ -- Mathias Gibbens <mathias@calenhad.com>  Sun, 31 Oct 2021 02:52:12 +0000

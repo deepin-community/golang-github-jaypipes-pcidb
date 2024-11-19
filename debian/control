@@ -1,15 +1,28 @@
-Source: template-repository
-Section: unknown
+Source: golang-github-jaypipes-pcidb
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Mathias Gibbens <gibmat@debian.org>
+Section: golang
+Testsuite: autopkgtest-pkg-go
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Build-Depends: debhelper-compat (= 13),
+               dh-golang,
+               golang-any,
+               golang-github-mitchellh-go-homedir-dev,
+               pci.ids
+Standards-Version: 4.7.0
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-jaypipes-pcidb
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-jaypipes-pcidb.git
+Homepage: https://github.com/jaypipes/pcidb
+Rules-Requires-Root: no
+XS-Go-Import-Path: github.com/jaypipes/pcidb
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: golang-github-jaypipes-pcidb-dev
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends},
+         golang-github-mitchellh-go-homedir-dev
+Description: Small golang library for querying PCI database (pciids) information (library)
+ pcidb is a small golang library that contains a PCI database
+ inspection and querying facility which allows developers to query for
+ information about hardware device classes, vendor and product
+ information.
